@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="package.js"></script>
+  <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating span, .rating a {
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+.rating a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.rating a:hover {
+    text-decoration: underline;
+}
+
+.wishlist {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.wishlist a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.wishlist a:hover {
+    text-decoration: underline;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image-large {
+    flex: 2 1 60%;
+}
+
+.image-large img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-small {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-small img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.activity-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.activity-details li {
+    margin-bottom: 10px;
+}
+
+.activity-details strong {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.booking-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price span {
+    font-size: 24px;
+    color: #333;
+}
+
+.price a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.price a:hover {
+    text-decoration: underline;
+}
+
+.reserve {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.reserve a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.reserve a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width:900px) {
+    .image-large img{
+        height: 300px;
+
+    }
+    .image-small img{
+        height: 150px;
+    }
+
+}
+
+  </style>
+</head>
+<body>
+     <!--Navebar-->
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#" style="font-size: xx-large;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: brown;">
+            Arctic Travels</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Home <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="about.html" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About</a>
+            <a class="nav-item nav-link" href="contuct.html" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact</a>
+            <a class="nav-item nav-link" href="contuct.html" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">lodging</a>
+            <a class="nav-item nav-link" href="#" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Passes</a>
+            <a class="nav-item nav-link" href="#" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Service</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div class="container">
+            <h1 id="title">Pattaya: Private Car Rental & Customize Tour with Driver</h1>
+            <div class="rating">
+                <span>★★★★★</span>
+                <span>5 / 5</span>
+                <a href="#">2 reviews</a>
+                <span>•</span>
+                <a href="#">Activity provider: Golden Dragon International</a>
+            </div>
+            <div class="wishlist">
+                <a href="#">Add to wishlist</a>
+            </div>
+            <div class="images">
+                <div class="image-large">
+                    <img src="Images/Thailand1.webp" alt="Pattaya city view" id="image1" height="600px">
+                </div>
+                <div class="image-small">
+                    <img src="Images/thailand2.webp" alt="Elephant ride" id="image2" height="300px">
+                    <img src="Images/Thailand1.webp" alt="Elephant ride" id="image3" height="300px">
+                </div>
+            </div>
+            <p id="description">Design your own schedule for up to 10 hours and explore the best of Pattaya. With your very own private transfer and expert driver guide!</p>
+            <h2>About this activity</h2>
+            <ul class="activity-details">
+                <li><strong>Free cancellation</strong><br>Cancel up to 24 hours in advance for a full refund</li>
+                <li><strong>Reserve now & pay later</strong><br>Keep your travel plans flexible — book your spot and pay nothing today.</li>
+                <li><strong>Valid 1 day</strong><br>Check availability to see starting times.</li>
+                <li><strong>Driver</strong><br>English</li>
+                <li><strong>Pickup optional</strong><br>Please confirm your pickup location via email. Please wait in the hotel lobby 10 mins before your pickup time.</li>
+                <li><strong>Wheelchair accessible</strong></li>
+                <li><strong>Private group</strong></li>
+            </ul>
+            <div class="booking-info">
+                <div class="price">
+                    <span id="amount">From ₹3,409 per person</span>
+                    <a href="#">Check availability</a>
+                </div>
+                <div class="reserve">
+                    <a href="#">Reserve now & pay later</a>
+                    <a href="#">Give this as a gift</a>
+                </div>
+            </div>
+            <div class="container py-5">
+                <h1>Map</h1>
+            <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
+                <div class="mt-4 w-100 aos-item__inner">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124458.4640735056!2d100.84035760114834!3d12.886682417613759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310295924d31d7e3%3A0xa97ff301a9bd10ff!2z4K6q4K6f4K-N4K6f4K6-4K6v4K6-LCBCYW5nIExhbXVuZyBEaXN0cmljdCwgQ2hvbiBCdXJpIDIwMTUwLCDgrqTgrr7grq_gr43grrLgrr7grqjgr43grqTgr4E!5e0!3m2!1sta!2sin!4v1717834304989!5m2!1sta!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="locati"></iframe>
+                </div>
+              </div>
+        </div>
+        </div>
+      </main>
+</body>
+</html>

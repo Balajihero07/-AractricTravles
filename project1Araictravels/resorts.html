@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resots.css">
+
+    <script src="script1.js"></script>
+
+    <title>Resorts</title>
+</head>
+<body>
+      <!--Navebar-->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#" style="font-size: xx-large;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: brown;">
+            Arctic Travels</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Home <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="about.html" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About</a>
+            <a class="nav-item nav-link" href="#" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact</a>
+            <a class="nav-item nav-link" href="#" style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Service</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!--Form -->
+      <div class="form">
+        <div class="row">
+          <div class="col">
+          <input type="text" class="form-control" placeholder="Where to?" aria-label="First name" id="searchBar">
+        </div>
+        <div class="col">
+          <input type="date" class="form-control" placeholder="Date" aria-label="Last name">
+        </div>
+        <div class="col">
+          <input type="number" class="form-control" placeholder="2 Travellers, 1 room" aria-label="Last name">
+        </div>
+        <a href="#!" class="btn btn-primary" style="width: 200px;"id="searchButton" >Search</a>
+      </div>
+     </div>
+
+     <!--result for searching-->
+     <div id="resort-listings"></div>
+     <!--Resort templtes-->
+     <div class="box0">
+     <div class="box1">
+      <!--Resorts 1-->
+        <div class="content">
+            <img src="Images/resorts3.jpg" alt="" >
+            <div class="contenttext">
+                <h3>Magic Beach Hotel HurghadaOpens in new window</h3>
+                <h5>Boasting a panoramic Red Sea view, Magic Beach Hotel Hurghada is located in the Hellal area. <br> It features an outdoor pool,
+                   a private beach and shopping arcade.</h5>
+                <h4>One Day <strike>Rs.8000</strike> Rs.5000</h4>
+
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+
+                <div class="height-100 container d-flex ">
+    
+                    <div class=" p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h5 class="review-count">112 Reviews</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      <!--Resorts 2-->
+        <div class="content">
+            <img src="Images/resorts2.webp" alt="" >
+            <div class="contenttext">
+                <h3>Siva Grand BeachOpens in new window  </h3>
+                <h5>This all-inclusive beachfront resort in Hurghada features an impressive freeform pool surrounded <br>
+                  by manicured gardens.</h5>
+                <h4>One Day <strike>Rs.10000</strike> Rs.7000</h4>
+
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+                <div class="height-100 container d-flex ">
+    
+                    <div class=" p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h5 class="review-count">18 Reviews</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--Resorts 3-->
+        <div class="content">
+          <img src="Images/resorts4.webp" alt="" >
+          <div class="contenttext">
+              <h3>Sunrise Holidays Resort -Adults Only</h3>
+              <h5>Adult-only SUNRISE Holidays Resort -Adults Onlyhas a private beach with lagoon and island. <br>
+                 It offers a dive centre, health club and outdoor pool overlooking the Red Sea.</h5>
+              <h4>One Day <strike>Rs.15000</strike> Rs.10000</h4>
+
+              <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+              <div class="height-100 container d-flex ">
+  
+                  <div class=" p-3">
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star"></i>
+                          </div>
+                          <h5 class="review-count">35 Reviews</h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--Resorts 4-->
+      <div class="content">
+        <img src="Images/resorts5.jpg" alt="" >
+        <div class="contenttext">
+            <h3>The Pine Woods - A Four Star Luxury Resort in Mussoorie</h3>
+            <h5>Located in Mussoorie, within 9 km of Gun Hill Point, Mussorie and 5.8 km of Kempty Falls, <br>
+               The Pine Woods - A Four Star Luxury Resort in Mussoorie provides <br>
+                accommodation with a restaurant and free.</h5>
+            <h4>One Day <strike>Rs.8000</strike> Rs.5000</h4>
+
+            <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+            <div class="height-100 container d-flex ">
+
+                <div class=" p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h5 class="review-count">121 Reviews</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--Resorts 5-->
+    <div class="content">
+      <img src="Images/resorts6.jpeg" alt="" >
+      <div class="contenttext">
+          <h3>Sitara Hotel & Resort, ! <br>
+            Most Awarded Property in MussoorieOpens  </h3>
+          <h5>Situated in Mussoorie, 14 km from Gun Hill Point, Mussorie, Sitara Hotel & Resort, !</h5>
+          <h4>One Day <strike>Rs.9000</strike> Rs.6000</h4>
+
+          <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+          <div class="height-100 container d-flex ">
+
+              <div class=" p-3">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <div class="ratings">
+                          <i class="fa fa-star rating-color"></i>
+                          <i class="fa fa-star rating-color"></i>
+                          <i class="fa fa-star rating-color"></i>
+                          <i class="fa fa-star rating-color"></i>
+                          <i class="fa fa-star"></i>
+                      </div>
+                      <h5 class="review-count">15 Reviews</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+      <!--Resorts 6-->
+  <div class="content">
+    <img src="Images/resorts7.jpg" alt="" >
+    <div class="contenttext">
+        <h3>Srinagar HomesOpens
+        </h3>
+        <h5>Located in Muzaffarabad, Srinagar Homes offers accommodation with air conditioning and  <br>
+          access to a garden. This bed and breakfast provides <br>
+           free private parking and a shared kitchen.</h5>
+        <h4>One Day <strike>Rs.8000</strike> Rs.5000</h4>
+
+        <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+        <div class="height-100 container d-flex ">
+
+            <div class=" p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h5 class="review-count">150 Reviews</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      <!--Resorts 7-->
+<div class="content">
+  <img src="Images/resorts8.webp" alt="" >
+  <div class="contenttext">
+      <h3>Vannee Golden Sands Beachfront
+      </h3>
+      <h5>Facing the beachfront, Vannee Golden Sands Beachfront Resort offers 4-star accommodation <br>
+        in Haad Rin and has a restaurant, outdoor swimming pool and fitness centre.
+      </h5>
+      <h4>One Day Indian rupee<strike>Rs.10000</strike> Rs.9000</h4>
+
+      <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+      <div class="height-100 container d-flex ">
+
+          <div class=" p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                  </div>
+                  <h5 class="review-count">12 Reviews</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+      <!--Resorts 8-->
+<div class="content">
+  <img src="Images/resorts9.jpg" alt="" >
+  <div class="contenttext">
+      <h3>Deva Beach Resort Samui</h3>
+      <h5>Located in the secluded beach of Choeng Mon with stunning sunset views, <br>
+        Deva Samui Resort. There are 3 outdoor pools and a seafront area. <br>
+         Free WiFi in all area is provided.</h5>
+      <h4>One Day <strike>Rs.20000</strike> Rs.15000</h4>
+
+      <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+      <div class="height-100 container d-flex ">
+
+          <div class=" p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                  </div>
+                  <h5 class="review-count">190 Reviews</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      <!--Resorts 9-->
+<div class="content">
+  <img src="Images/resorts10.jpg" alt="" >
+  <div class="contenttext">
+      <h3>The Sands Khao Lak by Katathani </h3>
+      <h5>A 1-hr drive from Phuket International Airport, The Sands Khao Lak by Katathani <br>
+         - SHA Extra Plus is situated by Nang Thong Beach. <br>
+          It offers modern rooms with a balcony and free Wi-Fi.</h5>
+      <h4>One Day <strike>Rs.8000</strike> Rs.5000</h4>
+
+      <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+      <div class="height-100 container d-flex ">
+
+          <div class=" p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                  </div>
+                  <h5 class="review-count">135 Reviews</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      <!--Resorts 10-->
+<div class="content">
+  <img src="Images/resorts11.webp" alt="" >
+  <div class="contenttext">
+      <h3>Katathani Phuket Beach Resort</h3>
+      <h5>Restful beach holidays await at the award-winning Katathani Phuket, <br>
+        with 6 pools and 6 dining options. Located across from Kata Beach,<br>
+         it features a first-rate spa and tennis courts.</h5>
+      <h4>One Day <strike>Rs.8000</strike> Rs.5000</h4>
+
+      <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Book Here</a>
+      <div class="height-100 container d-flex ">
+
+          <div class=" p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                  </div>
+                  <h5 class="review-count">120 Reviews</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  </div>
+<!--users define-->
+       <div class="users">
+          <div class="popular">
+            <h4>Popular Filter</h4>
+            <input type="checkbox" onclick="refresh();">5 Stars    <br>          
+            <input type="checkbox">Villa    <br>
+            <input type="checkbox">Swmming Pool    <br>
+            <input type="checkbox">Resorts    <br>
+            <input type="checkbox"  onclick="refresh();">Beach    <br>
+            <input type="checkbox">View Sea    <br>
+          </div>
+
+          <div class="popular">
+            <h4>Facilities</h4>
+            <input type="checkbox" onclick="refresh();">Parking    <br>          
+            <input type="checkbox">Free Wifi   <br>
+            <input type="checkbox">Restaurant    <br>
+            <input type="checkbox"  onclick="refresh();">Pets Allowed    <br>
+            <input type="checkbox">Romm Service    <br>
+          </div>
+
+          <div class="popular">
+            <h4>Room facilities</h4>
+            <input type="checkbox"  onclick="refresh();">Air Condation    <br>          
+            <input type="checkbox">Private Pool    <br>
+            <input type="checkbox">Sea View    <br>
+            <input type="checkbox"  onclick="refresh();">Private Bathroom    <br>
+            <input type="checkbox">Kitchen   <br>
+          </div>
+
+          <div class="popular">
+            <h4>Fun things to do</h4>
+            <input type="checkbox"  onclick="refresh();">Fitness center    <br>          
+            <input type="checkbox">Beach    <br>
+            <input type="checkbox">Children's Playgroud    <br>
+            <input type="checkbox"  onclick="refresh();">Kids's Club    <br>
+            <input type="checkbox">Games club   <br>
+          </div>
+
+          <div class="popular">
+            <h4>Property accessibility</h4>
+            <input type="checkbox" onclick="refresh();">Toilet with grab rails    <br>          
+            <input type="checkbox">Higher level toilet    <br>
+            <input type="checkbox">Lower bathroom sink    <br>
+            <input type="checkbox"  onclick="refresh();">Emergency cord in bathroom    <br>
+            <input type="checkbox">Visual aids: Braille   <br>
+            <input type="checkbox">Visual aids: Tactile signs    <br>
+          </div>
+
+          <div class="popular">
+            <h4>Room accessibility</h4>
+            <input type="checkbox"  onclick="refresh();">Upper floors accessible by elevator<br>          
+            <input type="checkbox">Walk-in shower   <br>
+          </div>
+
+       </div>
+
+
+
+</div>
+
+     <!--footer-->
+            <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="" style="background-color: #e3f2fd;">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div >
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4" style="font-size: xx-large;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: brown;">
+           Arctic Travels
+          </h6>
+          <p>
+            We help over 3,000 people a year organise incredible Antarctic, Arctic and Patagonian experiences. 
+            Our exclusive focus on this corner of the world means that whatever kind of adventure you're looking for, we can help. 
+          </p>
+        </div>
+        <!-- Grid column -->
+
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            links
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="about.html" class="text-reset">About as</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">contact</a>
+          </p>
+          <p>
+            <a href="packages.html" class="text-reset">Package</a>
+          </p>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> chennai-6000028, Tamil Nadu</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            araictravels@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 91 23456 78821</p>
+          <p><i class="fas fa-print me-3"></i> + 11 23456 78921</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    Designed and Developed By Balaji Sekar
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+</html>
